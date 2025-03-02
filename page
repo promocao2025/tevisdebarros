@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Conjunto Fit Ideal</title>
+    <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+      ttq.load('CV287B3C77U108FEF690');
+      ttq.page();
+    }(window, document, 'ttq');
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0e9e4; /* Bege claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #784a3d; /* Marrom terroso */
+            text-transform: uppercase;
+        }
+
+        label {
+            font-weight: 500;
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        select:focus {
+            border-color: #784a3d;
+            outline: none;
+            box-shadow: 0 0 5px rgba(120, 74, 61, 0.2);
+        }
+
+        button {
+            background-color: #784a3d;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #603c31;
+        }
+
+        .thank-you {
+            display: none;
+            font-size: 18px;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Seu Conjunto Fit Ideal</h2>
+        <form id="fit-form">
+            <label>Qual tipo de conjunto você prefere?</label>
+            <select id="fit" name="fit" required>
+                <option value="legging_top">Legging + Top</option>
+                <option value="shorts_top">Shorts + Top</option>
+                <option value="calca_jaqueta">Calça + Jaqueta</option>
+                <option value="macacao_fit">Macacão Fit</option>
+            </select>
+            <button type="submit">Encontre!</button>
+        </form>
+        <div class="thank-you">Obrigado por responder!</div>
+    </div>
+
+    <script>
+        document.getElementById('fit-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.querySelector('.thank-you').style.display = 'block';
+            setTimeout(() => {
+                document.querySelector('.thank-you').style.display = 'none';
+                e.target.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
